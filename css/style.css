@@ -23,12 +23,10 @@ body{
 }
 
 .question{
-	font-size: 4vh;
+	font-size: 4vh; 
 	color: yellow;
 	background-color: #2366AC;
 	z-index: 100;
-	width: 45%;
-	height:25%;
 	left:45.5%;
    	top:57%;
    	-ms-transform: translate(-50%, -50%);
