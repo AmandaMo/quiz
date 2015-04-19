@@ -12,24 +12,28 @@ body{
 }
 
 .tv{
-	height: 80%;
-	width: 80%;
+	height: 100%;
+	width:100%;
+	left: 50%;
+	top: 50%;
 	background-image: url("../images/simpsons_tv.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin: auto auto;
-	padding-top: 1em;
-	z-index: 5;
-
+	background-position: center;
 }
 
 .question{
-	font-size: .5em;
+	font-size: 4vh;
 	color: yellow;
 	background-color: #2366AC;
 	z-index: 100;
-	margin-top: -14em;
-	margin-left: 25%;
-	margin-right: 35%;
-	width: 40%;
+	width: 45%;
+	height:25%;
+	left:45.5%;
+   	top:57%;
+   	-ms-transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:absolute;
 }
