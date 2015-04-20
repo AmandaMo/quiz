@@ -11,14 +11,14 @@ $(document).ready(function(){
 		var height=$(window).height();
 		console.log(height);
 		$(".tv").css({
-			"height":(height*0.79),
-			"width":(height*0.85),
+			"height":(height*0.90),
+			"width":(height*0.98),
 		});
 		var tvHeight= $(".tv").height();
 		var tvWidth= $(".tv").width();
 		console.log(tvWidth);
 		console.log(tvHeight);
-			$(".question").css({
+			$(".screen").css({
 		        "width":(tvWidth*0.43), 
 		        "height":(tvHeight*0.35),
 		    });
@@ -27,5 +27,8 @@ $(document).ready(function(){
 
 	questionSize();
 	$(window).resize(questionSize);
+
+	$(".score").hide();
+	$(".start").hide();
 });
 

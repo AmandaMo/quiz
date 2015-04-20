@@ -4,7 +4,7 @@ body{
 	background-position: center;
 	background-size: cover;
 	font-family: Architects Daughter, sans-serif;
-	font-size: 4vh;
+	font-size: 3vh;
 	color: red;
 	text-align: center;
 	padding-bottom: .5em;
@@ -23,7 +23,7 @@ body{
     position:absolute;
 }
 
-.question{
+.screen{
 	color: yellow;
 	background-color: #2366AC;
 	z-index: 100;
@@ -37,19 +37,19 @@ body{
   /*  border-style:solid;
 	border-width: 1px;
 	border-color: yellow;*/
-	font-size: 2.5vh;
+	font-size: 3vh;
 }
 
 ul{
 	padding-left: 11vh;
 	text-align: left;
-	padding-top: 2.5vh;
+	padding-top: 3vh;
 }
 
 .button{
 	margin-top: 4vh;
 	color: yellow;
-	font-size: 2.5vh;
+	font-size: 3vh;
 	background: #176162;
     background-image: -webkit-linear-gradient(top, #176162, #176162);
     background-image: -moz-linear-gradient(top, #176162, #176162);
@@ -83,7 +83,24 @@ input[type=radio]{
 .count{
 	text-align: right;
 	z-index: 200;
-	margin-top: -3.5vh;
+	margin-top: -4vh;
 	margin-right: 2vh;
 
+}
+
+.burns{
+	height: 90%;
+	width: auto;
+	margin-left: -20vh;
+	z-index: 20;
+}
+
+#startbutton{
+	z-index: 500;
+	margin-top: -5vh;
+	margin-left: -15vh;
+}
+
+.score{
+	font-size: 10vh;
 }
