@@ -1,21 +1,32 @@
 $(document).ready(function(){
 
+// 	var img = new Image();
+// 	img.src = $('#TvDiv').css('background-image').replace(/url\(|\)$/ig, "");
+// 	var bgImgWidth = img.width;
+// 	var bgImgHeight = img.height;
+// 	console.log(bgImgWidth);
+// 	console.log(bgImgHeight);
 
-
-	function Questionsize(){
-		var height=document.getElementById('tvDiv').clientHeight;
+	function questionSize(){
+		var height=$(window).height();
 		console.log(height);
-		var width=document.getElementById('tvDiv').clientWidth;
-		console.log(width);
+		$(".tv").css({
+			"height":(height*0.79),
+			"width":(height*0.85),
+		});
+		var tvHeight= $(".tv").height();
+		var tvWidth= $(".tv").width();
+		console.log(tvWidth);
+		console.log(tvHeight);
 			$(".question").css({
-		        width:(width*0.25), 
-		        height:(height*0.4),
+		        "width":(tvWidth*0.44), 
+		        "height":(tvHeight*0.35),
 		    });
 	}
 
 
-	Questionsize();
-
+	questionSize();
+	$(window).resize(questionSize());
 });
 
 
