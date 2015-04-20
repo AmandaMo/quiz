@@ -3,8 +3,8 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	font-family: Shadows Into Light;
-	font-size: 5em;
+	font-family: Architects Daughter, sans-serif;
+	font-size: 4vh;
 	color: red;
 	text-align: center;
 	padding-bottom: .5em;
@@ -37,7 +37,7 @@ body{
   /*  border-style:solid;
 	border-width: 1px;
 	border-color: yellow;*/
-	font-size: 3vh;
+	font-size: 2.5vh;
 }
 
 ul{
@@ -47,6 +47,43 @@ ul{
 }
 
 .button{
-	margin-top: 3vh;
-	color: red;
+	margin-top: 4vh;
+	color: yellow;
+	font-size: 2.5vh;
+	background: #176162;
+    background-image: -webkit-linear-gradient(top, #176162, #176162);
+    background-image: -moz-linear-gradient(top, #176162, #176162);
+    background-image: -ms-linear-gradient(top, #176162, #176162);
+    background-image: -o-linear-gradient(top, #176162, #176162);
+    background-image: linear-gradient(to bottom, #176162, #176162);
+	-webkit-border-radius: 2vh;
+	-moz-border-radius: 2vh;
+	border-radius: 2vh;
+	font-family: Architects Daughter;
+	padding: .5vh 2vh .5vh 2vh;
+	text-decoration: none;
+	border: solid #000000 2px;
+}
+
+.button:hover {
+	background: #0f3d3d;
+    background-image: -webkit-linear-gradient(top, #0f3d3d, #0f3d3d);
+    background-image: -moz-linear-gradient(top, #0f3d3d, #0f3d3d);
+    background-image: -ms-linear-gradient(top, #0f3d3d, #0f3d3d);
+    background-image: -o-linear-gradient(top, #0f3d3d, #0f3d3d);
+    background-image: linear-gradient(to bottom, #0f3d3d, #0f3d3d);
+    text-decoration: none;
+}
+
+input[type=radio]{
+	width:2vh;
+	height:2vh;
+} 
+
+.count{
+	text-align: right;
+	z-index: 200;
+	margin-top: -3.5vh;
+	margin-right: 2vh;
+
 }
