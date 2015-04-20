@@ -34,8 +34,19 @@ body{
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position:absolute;
-    border-style:solid;
+  /*  border-style:solid;
 	border-width: 1px;
-	border-color: yellow;
+	border-color: yellow;*/
 	font-size: 3vh;
+}
+
+ul{
+	padding-left: 11vh;
+	text-align: left;
+	padding-top: 2.5vh;
+}
+
+.button{
+	margin-top: 3vh;
+	color: red;
 }

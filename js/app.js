@@ -19,19 +19,13 @@ $(document).ready(function(){
 		console.log(tvWidth);
 		console.log(tvHeight);
 			$(".question").css({
-		        "width":(tvWidth*0.44), 
+		        "width":(tvWidth*0.43), 
 		        "height":(tvHeight*0.35),
 		    });
 	}
 
 
 	questionSize();
-	$(window).resize(questionSize());
+	$(window).resize(questionSize);
 });
 
-
-
-// font-size: 4vh;
-// font-size: 4vw;
-// width
-// height
