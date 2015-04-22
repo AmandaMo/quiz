@@ -97,10 +97,22 @@ input[type=radio]{
 
 #startButton{
 	z-index: 500;
-	margin-top: -5vh;
+	margin-top: -15vh;
 	margin-left: -15vh;
 }
 
 .score{
 	font-size: 10vh;
+}
+
+.correct{
+	margin-top: -20vh;
+	font-size: 8vh;
+	z-index: 5000;
+}
+
+.incorrect{
+	margin-top: -20vh;
+	font-size: 8vh;
+	z-index: 5000;
 }

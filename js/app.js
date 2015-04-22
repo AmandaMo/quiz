@@ -25,7 +25,7 @@ $(document).ready(function(){
 	}
 
 	function quizQuestions(question, answers, correctAnswer){
-		this.question = questions;
+		this.question = question;
 		this.answers= answers;
 		this.correctAnswer= correctAnswer;
 	}
@@ -35,23 +35,32 @@ $(document).ready(function(){
 	var questionThree = new quizQuestions("Who Shot Mr. Burns?", ['Smithers', 'Homer', 'Abe', 'Maggie'],'Maggie');
 	var questionFour = new quizQuestions("Which of the following garments does he NOT own?", ['Grizzly bear Underwear', 'Gopher Loafers', 'Albino Rhino Chinos', 'Gorilla chest vest'],'Albino Rhino Chinos');
 	var questionFive = new quizQuestions("Which of the following has guarded Burns Manor?", ['Robotic Richard Simmons','the Ghost of Howard Taft', 'Guard llama','Stay Puft Marshmallow Man','Robo Cop'],'Robotic Richard Simmons');
-			
+		
+	var questionList=[questionOne, questionTwo, questionThree, questionFour, questionFive];	
 
 	$("#submitButton").click(function(){
+		var count = 0;
 		var answerList = document.getElementsByName("answer");
 		for (var i=0, len=answerList.length; i<len; ++i)
 			if (answerList[i].checked){
 				var answer=answerList[i].value;
 				console.log(answer);
-				if (answer===quizQuestions.answers[0][0]){
+				if (answer===questionList[count].correctAnswer){
 					$(".firstQuestion").hide();
 					$(".correct").show();
-					$(".correct").fadeout("slow");
+					$(".correct").fadeOut(2000);
+					count = (count +1);
+					$(".question").replaceWith(questionList[count].question);
+					$("#answers1").replaceWith(questionList[count].answers[0]);
+					$("#answers2").replaceWith(questionList[count].answers[1]);
+					$("#answers3").replaceWith(questionList[count].answers[2]);
+					$("#answers4").replaceWith(questionList[count].answers[3]);
+					$(".firstQuestion").fadeIn(2000);
 				}
 				else{
 					$(".firstQuestion").hide();
 					$(".incorrect").show();
-					$(".incorrect").fadeout("slow");
+					$(".incorrect").fadeOut(2000);
 				}
 			} 
 			else{
