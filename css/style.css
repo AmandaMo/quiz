@@ -95,7 +95,7 @@ input[type=radio]{
 	z-index: 20;
 }
 
-#startbutton{
+#startButton{
 	z-index: 500;
 	margin-top: -5vh;
 	margin-left: -15vh;

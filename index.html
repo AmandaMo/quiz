@@ -14,21 +14,27 @@
 		<div class="firstQuestion">
 				<h3>What is the name of Mr. Burn's prized Teddy Bear?</h3>
 				<ul>
-					<li><input type="radio" name="answer" value="Bobo"> Bobo</li>
-					<li><input type="radio" name="answer" value="Yanci"> Yanci</li>
-					<li><input type="radio" name="answer" value="Sherman"> Sherman</li>
-					<li><input type="radio" name="answer" value="Teddy"> Teddy</li>
+					<li><input type="radio" name="answer" id="answer1" value="Bobo"> Bobo</li>
+					<li><input type="radio" name="answer" id="answer2" value="Yanci"> Yanci</li>
+					<li><input type="radio" name="answer" id="answer3" value="Sherman"> Sherman</li>
+					<li><input type="radio" name="answer" id="answer4" value="Teddy"> Teddy</li>
 				</ul>
-			<button class="button" type="button">Submit</button>
+			<button class="button" type="button" id="submitButton">Submit</button>
 			<p class="Count"><span ID="currentCount">1</span>/5</p>
 		</div>
 		<div class="start">
 			<h1>Mr. Burn's Excellent Quiz</h1>
 			<img class="burns" id="mrBurns" src="images/mrburns.png" alt="tv">
-			<button class="button" id="startbutton" type="button">Start?</button>
+			<button class="button" id="startButton" type="button">Start?</button>
 		</div>
 		<div class="score">
 			<h1>You Scored <span id="score">5</span>/5</h1>
+		</div>
+		<div class="correct">
+			<h1>Correct!</h1>
+		</div>
+		<div class="incorrect">
+			<h1>Incorrect.</h1>
 		</div>
 	</div>
 </body>

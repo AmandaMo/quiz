@@ -24,11 +24,52 @@ $(document).ready(function(){
 		    });
 	}
 
+	function quizQuestions(question, answers, correctAnswer){
+		this.question = questions;
+		this.answers= answers;
+		this.correctAnswer= correctAnswer;
+	}
+
+	var questionOne = new quizQuestions("What was the name of Mr. Burns' prized teddy bear?",["Bobo", "Yanci", "Sherman", "Teddy"],"Bobo");
+	var questionTwo = new quizQuestions("What Ivy League school did Mr. Burns attend?",["Harvard", "Princeton", "Yale", "Brown"],'Yale');
+	var questionThree = new quizQuestions("Who Shot Mr. Burns?", ['Smithers', 'Homer', 'Abe', 'Maggie'],'Maggie');
+	var questionFour = new quizQuestions("Which of the following garments does he NOT own?", ['Grizzly bear Underwear', 'Gopher Loafers', 'Albino Rhino Chinos', 'Gorilla chest vest'],'Albino Rhino Chinos');
+	var questionFive = new quizQuestions("Which of the following has guarded Burns Manor?", ['Robotic Richard Simmons','the Ghost of Howard Taft', 'Guard llama','Stay Puft Marshmallow Man','Robo Cop'],'Robotic Richard Simmons');
+			
+
+	$("#submitButton").click(function(){
+		var answerList = document.getElementsByName("answer");
+		for (var i=0, len=answerList.length; i<len; ++i)
+			if (answerList[i].checked){
+				var answer=answerList[i].value;
+				console.log(answer);
+				if (answer===quizQuestions.answers[0][0]){
+					$(".firstQuestion").hide();
+					$(".correct").show();
+					$(".correct").fadeout("slow");
+				}
+				else{
+					$(".firstQuestion").hide();
+					$(".incorrect").show();
+					$(".incorrect").fadeout("slow");
+				}
+			} 
+			else{
+			}
+
+	});
 
 	questionSize();
 	$(window).resize(questionSize);
 
+	$("#startButton").click(function(){
+		$(".firstQuestion").show();
+		$(".start").hide();
+	});
+
 	$(".score").hide();
-	$(".start").hide();
+	$(".firstQuestion").hide();
+	$(".incorrect").hide();
+	$(".correct").hide();
 });
 
