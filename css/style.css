@@ -116,3 +116,7 @@ input[type=radio]{
 	font-size: 8vh;
 	z-index: 5000;
 }
+
+.start{
+	z-index:5000;
+}

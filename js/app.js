@@ -25,6 +25,7 @@ $(document).ready(function(){
 	$(".correct").hide();
 
 	var count = 0;
+	var score = 0;
 
 	var questionOneHtml = "<h3 class='question'>What is the name of Mr. Burn's prized Teddy Bear?</h3>" +
 					"<ul class='answers'>"+
@@ -89,8 +90,12 @@ $(document).ready(function(){
 			$(".newDivHere").empty()
 			$(".newDivHere").append(questionFiveHtml)
 		}
+		else if (count===5){
+			$(".score").fadeIn(3000)
+			$(".firstQuestion").fadeOut(2000)
+			$("#score").append(score)
+		}
 		else{
-			console.log("WHY!?")
 			$(".newDivHere").append(questionOneHtml)
 		}
 	}
@@ -126,7 +131,10 @@ $(document).ready(function(){
 					$(".firstQuestion").hide();
 					$(".correct").show();
 					$(".correct").fadeOut(2000);
-					count = (count +1);
+					count = count +1;
+					score = score +1;
+					$("#currentCount").empty();
+					$("#currentCount").append(count+1);
 					console.log(count);
 					findQuestion();
 					break;
@@ -135,7 +143,9 @@ $(document).ready(function(){
 					$(".firstQuestion").hide();
 					$(".incorrect").show();
 					$(".incorrect").fadeOut(2000);
-					count = (count +1);
+					count = count +1;
+					$("#currentCount").empty();
+					$("#currentCount").append(count+1);
 					findQuestion();
 					break;
 				}
