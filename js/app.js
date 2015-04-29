@@ -71,32 +71,34 @@ $(document).ready(function(){
 
 	function findQuestion(){
 		if(count===1){
-			$(".firstQuestion").fadeIn(3000)
-			$(".newDivHere").empty()
-			$(".newDivHere").append(questionTwoHtml)
+			$(".firstQuestion").fadeIn(3000);
+			$(".newDivHere").empty();
+			$(".newDivHere").append(questionTwoHtml);
 		}
 		else if (count===2){
-			$(".firstQuestion").fadeIn(3000)
-			$(".newDivHere").empty()
-			$(".newDivHere").append(questionThreeHtml)
+			$(".firstQuestion").fadeIn(3000);
+			$(".newDivHere").empty();
+			$(".newDivHere").append(questionThreeHtml);
 		}
 		else if (count===3){
-			$(".firstQuestion").fadeIn(3000)
-			$(".newDivHere").empty()
-			$(".newDivHere").append(questionFourHtml)
+			$(".firstQuestion").fadeIn(3000);
+			$(".newDivHere").empty();
+			$(".newDivHere").append(questionFourHtml);
+			$("ul").addClass("wideUL");
 		}
 		else if (count===4){
-			$(".firstQuestion").fadeIn(3000)
-			$(".newDivHere").empty()
-			$(".newDivHere").append(questionFiveHtml)
+			$(".firstQuestion").fadeIn(3000);
+			$(".newDivHere").empty();
+			$(".newDivHere").append(questionFiveHtml);
+			$("ul").addClass("wideUL");
 		}
 		else if (count===5){
-			$(".score").fadeIn(3000)
-			$(".firstQuestion").fadeOut(2000)
-			$("#score").append(score)
+			$(".score").fadeIn(3000);
+			$(".firstQuestion").fadeOut(2000);
+			$("#score").append(score);
 		}
 		else{
-			$(".newDivHere").append(questionOneHtml)
+			$(".newDivHere").append(questionOneHtml);
 		}
 	}
 
